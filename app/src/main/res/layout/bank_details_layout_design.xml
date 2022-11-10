@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/btn_background_gradient"
+    android:backgroundTint="@color/white"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/headerTVDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background_gradient"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="Bank details"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Account number: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="2346546457"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Bank holder name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Kawsar ahmed"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Bank name "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Bank of India"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="IFSC code "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="BKID0005022"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="UPI id"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/lato_bold"
+        android:gravity="center|start"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="abc@ybl"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/actionBtnDialog"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/btn_rounded_background_gradient"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="Close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/cancelBtnDialog"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/btn_rounded_background_gradient"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="Complete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+
+
+</LinearLayout>

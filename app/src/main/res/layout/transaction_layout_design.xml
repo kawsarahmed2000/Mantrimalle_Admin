@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/nameTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="Kawsar ahmed"
+        android:textColor="@color/text_black_4th"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amountTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="₹ 407"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTnx_idTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/lato"
+        android:text="Transaction id: "
+        android:textColor="@color/text_black_4th"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="@id/nameTransaction"
+        app:layout_constraintTop_toBottomOf="@id/nameTransaction" />
+
+    <TextView
+        android:id="@+id/tnx_idTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/lato"
+        android:text="Transaction id: "
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTnx_idTransaction"
+        app:layout_constraintStart_toEndOf="@+id/tvTnx_idTransaction"
+        app:layout_constraintTop_toTopOf="@+id/tvTnx_idTransaction" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

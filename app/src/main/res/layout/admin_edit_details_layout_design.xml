@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/textview_background_grey_stroke"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_background_grey_stroke"
+        android:backgroundTint="@color/black"
+        android:gravity="center|end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/editDetailsHeaderTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:fontFamily="@font/lato"
+            android:padding="@dimen/_10sdp"
+            android:text="Edit user details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:id="@+id/closeBtn"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_close_24"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="Name"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_11ssp" />
+
+        <EditText
+            android:id="@+id/userIdET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:autoLink="none"
+            android:background="@drawable/textview_grey_stroke"
+            android:fontFamily="@font/lato"
+            android:hint="User Id"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_black_4th"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="Mobile number"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_11ssp" />
+
+        <EditText
+            android:id="@+id/mobileNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:autoLink="none"
+            android:background="@drawable/textview_grey_stroke"
+            android:fontFamily="@font/lato"
+            android:hint="Mobile number"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_black_4th"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/btn_background_gradient"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/lato"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+</LinearLayout>

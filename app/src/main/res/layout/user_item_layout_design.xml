@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profileUser"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/usernameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Kawsar ahmed"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toEndOf="@id/profileUser"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userIdUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="Id: 687690"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="@id/usernameUser"
+        app:layout_constraintTop_toBottomOf="@id/usernameUser" />
+
+    <TextView
+        android:id="@+id/mobileNumberUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/lato"
+        android:text="+91986497343"
+        android:textColor="#858585"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintStart_toStartOf="@id/userIdUser"
+        app:layout_constraintTop_toBottomOf="@id/userIdUser" />
+
+    <TextView
+        android:id="@+id/balanceUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/lato"
+        android:text="balance: ₹876586"
+        android:textColor="#858585"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintStart_toStartOf="@id/mobileNumberUser"
+        app:layout_constraintTop_toBottomOf="@id/mobileNumberUser" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:text="Completed"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balanceUser" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/balanceUser"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/text_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="151dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

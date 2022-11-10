@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/profileWithdrawal"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amountWithdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/lato_bold"
+        android:text="₹500"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toEndOf="@id/profileWithdrawal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userNameWithdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:text="username: Lawsar_3534"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="@id/amountWithdrawal"
+        app:layout_constraintTop_toBottomOf="@id/amountWithdrawal" />
+
+    <TextView
+        android:id="@+id/idWithdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/lato"
+        android:text="Id: 7009"
+        android:textColor="#858585"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintStart_toStartOf="@id/userNameWithdrawal"
+        app:layout_constraintTop_toBottomOf="@id/userNameWithdrawal" />
+
+    <TextView
+        android:id="@+id/dateWithdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/lato"
+        android:text="08-Nov-2022 10:45 AM"
+        android:textColor="#858585"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintStart_toStartOf="@id/idWithdrawal"
+        app:layout_constraintTop_toBottomOf="@id/idWithdrawal" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:text="Completed"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateWithdrawal" />
+
+    <LinearLayout
+        android:id="@+id/layoutActionBtns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/dateWithdrawal"
+        app:layout_constraintTop_toBottomOf="@id/dateWithdrawal">
+
+        <Button
+            android:id="@+id/acceptBtnWithdrawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/lato"
+            android:text="Accept"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <Button
+            android:id="@+id/cancelBtnWithdrawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:backgroundTint="@color/white"
+            android:elevation="@dimen/_3sdp"
+            android:fontFamily="@font/lato"
+            android:text="Cancel"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_12ssp"
+            android:translationZ="@dimen/_3sdp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@color/text_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutActionBtns" />
+</androidx.constraintlayout.widget.ConstraintLayout>

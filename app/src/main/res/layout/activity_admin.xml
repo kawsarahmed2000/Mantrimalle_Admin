@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ScreenBackground"
+    android:layout_height="match_parent"
+    tools:context=".admin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/black"
+        android:elevation="@dimen/_5sdp"
+        android:gravity="start|center"
+        android:translationZ="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/backBtnUsers"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:text="Admin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center|start"
+        android:background="@drawable/btn_rounded_background_gradient"
+        android:backgroundTint="@color/white_2nd"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_search_24"
+            app:tint="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/userIdET"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@null"
+            android:fontFamily="@font/lato"
+            android:hint="User Id"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_black_4th"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/adminRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/admin_list_item_layout_design"/>
+</LinearLayout>
